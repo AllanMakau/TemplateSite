@@ -8,15 +8,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
 
     <title>REDE UZE </title>
   </head>
   <body>
     
-    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-gradient-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
         <a class="navbar-brand h1 mb-0" href="#"> Curso</a>
-        <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="navbarSite">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSite">
@@ -37,7 +38,7 @@
 
             <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggler" href="#" data-toggler="dropdown" id="navDrop"> Social</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-toggler="dropdown" id="navDrop"> Social</a>
                     </li>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Facebook</a>
@@ -53,9 +54,144 @@
         </div >
     </div>
     </nav>
+<!-- Carousel-->
+    <div id="carouselSite" class="carousel slide" data-ride="carousel">
 
-   <!-- <script src="node_modules/jQuery/dist/jquery.js" ></script>
-    <script src="node_modules/popper.js/dist/umd/popper.js" ></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js" ></script> -->
+        <ol class="carousel-indicators">
+            <li class="active" data-target="carouselSite" data-slide-to="0"></li>
+            <li  data-target="carouselSite" data-slide-to="1"></li>
+            <li  data-target="carouselSite" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Carousel com as imagens-->
+        <div class="carousel-inner">
+            <div class="carousel-item active" >
+                <img src="imgs/slide-01.jpg" class="img-fuid d-block"> 
+                <div class="carousel-caption d-none d-md-block ">
+                    <h1>Vestibulum quis sem eget ex tempus bibendum</h1>
+                    <p> consectetur adipiscing elit. Etiam a viverra nulla. Duis accumsan odio sed gravida elementum. Etiam vestibulum libero non nulla sagittis,</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="imgs/slide-02.jpg" class="img-fuid d-block"> 
+                <div class="carousel-caption d-none d-md-block ">
+                    <h1>Vestibulum efficitur felis non ex eleifend condimentum</h1>
+                    <p> consectetur adipiscing elit. Etiam a viverra nulla. Duis accumsan odio sed gravida elementum. Etiam vestibulum libero non nulla sagittis,</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="imgs/slide-03.jpg" class="img-fuid d-block"> 
+                <div class="carousel-caption d-none d-md-block ">
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p> consectetur adipiscing elit. Etiam a viverra nulla. Duis accumsan odio sed gravida elementum. Etiam vestibulum libero non nulla sagittis,</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- setas para passar o corousel-->
+        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Avançar</span>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                    <h1 class="display-3">Lorem ipsum dolor sit amet</h1>
+                    <p> consectetur adipiscing elit. Etiam a viverra nulla. nulla sagittis,</p> 
+            </div>
+
+
+           <div class="row mb-5">
+                <div class="col-3">
+                    <nav id="navbarVertical" class="navbar navbar-light bg-light" >
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item1">Lorer Ipsum</a>
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link ml-3" href="#item1-1">Testando link 1</a>
+                                    <a class="nav-link ml-3" href="#item1-2">Agora link 2/a> 
+                                </nav>
+                            <a class="nav-link my-2" href="#item2">Juskd jdjdj8e</a>
+                            
+                            <a class="nav-link my-2" href="#item3">Jsdhd humd</a>
+
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ml-3" href="#item3-1">Testando link 1</a>
+                                <a class="nav-link ml-3" href="#item3-1">Agora link 2/a> 
+                            </nav>
+                        </nav>
+            
+                </div>
+
+                <div class="col-9">
+                    <div data-spy="scroll" data-target="#navbarVertical" data-offset="0">
+                        <h4 id="item1">TExto bom</h4>
+                        <p>estibulum quis sem eget ex tempus bibendum. Donec vitae tellus in nisi scelerisque eleifend id 
+                            id dolor. In vel libero id quam tincidunt faucibus vitae elementum augue. Nulla pharetra diam ac
+                             molestie gravida. Nullam non dui mauris. Suspendisse eget lorem est. In hac habitasse platea dictumst. 
+                             Mauris molestie nulla sed velit viverra ultricies. Duis ultrices nulla eros, ac interdum turpis euismod 
+                        </p>
+
+                        <h5 id="item1-1">Esse é novo</h5>
+                        <p>olor fringilla neque, nec eleifend tortor diam vestibulum orci. Quisque a bibendum sapien, at condimentum tortor.
+                             Nam ac consequat nisl. Integer sit amet diam vestibulum, dapibus dolor a, imperdiet lacus. Etiam at justo orci. 
+                             Phasellus scelerisque diam et erat pretium, vel pellentesque nunc porttitor. Vivamus ac eros tincidunt, fringilla erat
+                              at, pulvinar leo. Duis eu tempor ligula, ultricies posuere justo.
+                        </p>
+
+                        <h5 id="item1-2"></h5>
+                        <p>nim, id maximus ante cursus hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac 
+                            turpis egestas. Ut accumsan arcu a neque mollis, ac varius ligula ornare. Nunc sodales eros a tortor laoreet, a
+                             tincidunt felis venenatis. Proin aliquam fringilla consequat.
+                        </p>
+
+                        <h4 id="item2">Esse texto Item 2</h4>
+                        <p>estibulum quis sem eget ex tempus bibendum. Donec vitae tellus in nisi scelerisque eleifend id 
+                            id dolor. In vel libero id quam tincidunt faucibus vitae elementum augue. Nulla pharetra diam ac
+                             molestie gravida. Nullam non dui mauris. Suspendisse eget lorem est. In hac habitasse platea dictumst. 
+                             Mauris molestie nulla sed velit viverra ultricies. Duis ultrices nulla eros, ac interdum turpis euismod 
+                        </p>
+
+                        <h4 id="item3">Esse texto Item 2</h4>
+                        <p>estibulum quis sem eget ex tempus bibendum. Donec vitae tellus in nisi scelerisque eleifend id 
+                            id dolor. In vel libero id quam tincidunt faucibus vitae elementum augue. Nulla pharetra diam ac
+                             molestie gravida. Nullam non dui mauris. Suspendisse eget lorem est. In hac habitasse platea dictumst. 
+                             Mauris molestie nulla sed velit viverra ultricies. Duis ultrices nulla eros, ac interdum turpis euismod 
+                        </p>
+
+                        <h5 id="item3-1">Esse é novo</h5>
+                        <p>olor fringilla neque, nec eleifend tortor diam vestibulum orci. Quisque a bibendum sapien, at condimentum tortor.
+                             Nam ac consequat nisl. Integer sit amet diam vestibulum, dapibus dolor a, imperdiet lacus. Etiam at justo orci. 
+                             Phasellus scelerisque diam et erat pretium, vel pellentesque nunc porttitor. Vivamus ac eros tincidunt, fringilla erat
+                              at, pulvinar leo. Duis eu tempor ligula, ultricies posuere justo.
+                        </p>
+
+                        <h5 id="item3-2"></h5>
+                        <p>nim, id maximus ante cursus hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac 
+                            turpis egestas. Ut accumsan arcu a neque mollis, ac varius ligula ornare. Nunc sodales eros a tortor laoreet, a
+                             tincidunt felis venenatis. Proin aliquam fringilla consequat.
+                        </p>
+
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- jQuery,Popper.js, then Bootstrap JS ... all called from our source/-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   </body>
 </html>
